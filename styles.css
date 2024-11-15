@@ -4,7 +4,7 @@
     --black: #15002c;
     --primary-color:  #845ec2;
     --dark-primary-color:#4902ac;
-    --overlay:  rgba(0, 0, 0, 0.4);
+    --overlay:  rgba(0, 0, 0, 0.6);
     --grey: #d8d0e1;
     --dark-grey: #7a7a7a;
     --secondary-color:#f6c8ff;
@@ -27,8 +27,7 @@ h2 {
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
-    background-image: linear-gradient(to right, #d8d0e1, #dccfe8, #e1ceee, #e7cdf4, #edcbf9, #edcbf9, #edcbf9, #edcbf9, #e7cdf4, #e1ceee, #dccfe8, #d8d0e1);
-}
+    background-image: linear-gradient(to right, #f6c8ff, #efcafb, #e9ccf6, #e3cef0, #decfea, #decfea, #decfea, #decfea, #e3cef0, #e9ccf6, #efcafb, #f6c8ff);}
 
 header {
     background-image: linear-gradient(to bottom, #f6c8ff, #edcbf9, #e5cdf2, #decfea, #d8d0e1);
@@ -51,7 +50,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color:var(--primary-color);
+    color:var(--dark-primary-color);
 }
 
 nav ul {
@@ -79,6 +78,8 @@ nav ul li a:hover {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+
 
 .hero {
     background-image: url('images/fondo_home.jpg');
@@ -122,21 +123,26 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 72px;
     margin-bottom: 1rem;
+    text-shadow: 1px, 1px, 1px, #ffffff;
+    line-height: 1.1em;
+    font-weight: 450;
 }
 
-.hero span {
-    color: var(--primary-color);
-    text-shadow: 1px 1px 1px var(--white);
+.gradient-text {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to top,#177ff5, #ff39db, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 1px white)
+           drop-shadow(0 0 2px white)
+           drop-shadow(0 0 3px rgb(255, 255, 255));
 }
 
-.hero span:hover {
-    color: var(--secondary-color);
-    text-shadow: 2px 2px 2px var(--white);
- 
-}
 
 .hero p {
-    font-size: clamp(1.4rem, 2.4vw, 1.6rem);
+    font-size: clamp(1.6rem, 2.6vw, 1.8rem);
     color: var(--white);
 }
 
@@ -319,7 +325,7 @@ button:hover {
 
 /* Estilos base del formulario */
 .main-header-form {
-    margin-top: 70px;
+    margin-top: 90px;
     color: var(--white);
 }
 .frm-back {
