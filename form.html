@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>CasaArtesana - Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CasaArtesana</div>
+            <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html">Productos</a></li>
+                <li><a href="/form.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="frm-back">
+        <h2 class="main-header-form">¿Tenés alguna pregunta sobre nuestras artesanías? <br>Escribinos</h2>
+
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+            <fieldset id="fs-frm-inputs">
+            <label for="full-name">Nombre completo</label>
+            <input type="text" name="name" id="full-name" placeholder="Nombre y apellido" required="">
+            <label for="email-address">Email </label>
+            <input type="email" name="_replyto" id="email-address" placeholder="ejemplo@email.com" required="">
+            <label for="message">Mensaje</label>
+            <textarea rows="5" name="message" id="message" placeholder="Escribí tu mensaje o consulta" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Enviar">
+         </form>  
+    </section> 
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section1">
+                <h3>Sobre Nosotros</h3>
+                <p>CasaArtesana. Piezas únicas para hogares únicos. <br>Artesanías que dan vida a tu hogar.</p>
+            </div>
+
+            <div class="footer-section2">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Email: info@casaartesana.com</li>
+                    <li>Teléfono: (123) 456-7890</li>
+                    <li>Dirección: Calle Falsa 123, Springfield, CP 12345</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            
+             <hr>
+             <br>
+            <p>&copy; 2024 CasaArtesana. Todos los derechos reservados.</p>
+
+        </div>
+
+    </footer>
