@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 .hero h1 {
     font-size: 72px;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .hero span {
@@ -140,8 +140,24 @@ nav ul li a:hover {
     color: var(--white);
 }
 
+@media (max-width: 760px) {
+    h1 {
+        font-size: 48px;
+        margin-bottom: 0.8rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+        margin-bottom: 0.6rem;
+        margin-top: 8rem;
+    }
+}
+
 .filtros {
-    background: var(--white);
+    background: var(--grey);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -151,9 +167,10 @@ nav ul li a:hover {
 .filtros select {
     padding: 8px;
     margin-right: 15px;
-    border: 1px solid var(--grey);
+    border: 2px solid var(--primary-color);
     border-radius: 4px;
     min-width: 150px;
+    font-size: large;
 }
 
 .productos-contenedor {
@@ -166,11 +183,11 @@ nav ul li a:hover {
 .productos-flexbox {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px; /* Compensar el padding de las cards */
+    margin: -15px;
 }
 
 .card-producto {
-    width: calc(33.333% - 30px); /* Tres cards por fila */
+    width: calc(33.333% - 30px); 
     margin: 15px;
     background: var(--white);
     border-radius: 8px;
@@ -180,10 +197,12 @@ nav ul li a:hover {
     transition: transform 0.2s;
     display: flex;
     flex-direction: column;
+
 }
 
 .card-producto:hover {
     transform: translateY(-5px);
+
 }
 
 .producto-imagen {
