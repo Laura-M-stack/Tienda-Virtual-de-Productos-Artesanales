@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>CasaArtesana</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CasaArtesana</div>
+            <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="/form.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1>Descubrí el <span>arte</span> <br>de lo hecho <span>a mano</span></h1>
+                <p>Donde la tradición se encuentra con el diseño</p>
+                
+                <a href="#productos"><button >Ver productos</button></a>
+            </div>
+        </section>
+    
+        <div id="productos" class="productos-contenedor">
+            <div class="filtros">
+                <select name="categoria">
+                    <option value="">Todas las categorías</option>
+                    <option value="ceramica">Cerámica</option>
+                    <option value="textil">Textil</option>
+                    <option value="madera">Madera</option>
+                    <option value="joyeria">Joyería</option>
+                </select>
+                <select name="precio">
+                    <option value="">Ordenar por precio</option>
+                    <option value="menor">Menor a mayor</option>
+                    <option value="mayor">Mayor a menor</option>
+                </select>
+            </div>
+    
+            <div class="productos-flexbox">
+                <div class="card-producto">
+                    <img src="/images/jarron_ceramica.jpg" alt="Jarrón de Cerámica" class="producto-imagen">
+                    <span class="producto-categoria">Cerámica</span>
+                    <h3 class="producto-nombre">Jarrón de Cerámica Artesanal</h3>
+                    <p class="producto-precio">$23.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+    
+                <div class="card-producto">
+                    <img src="/images/collar.jpg" alt="Collar Artesanal" class="producto-imagen">
+                    <span class="producto-categoria">Joyería</span>
+                    <h3 class="producto-nombre">Collar Artesanal de Plata</h3>
+                    <p class="producto-precio">$12.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+    
+                <div class="card-producto">
+                    <img src="/images/alfombra_crochet.jpg" alt="Alfombra crochet" class="producto-imagen">
+                    <span class="producto-categoria">Textil</span>
+                    <h3 class="producto-nombre">Alfombra crochet</h3>
+                    <p class="producto-precio">$30.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+                 <div class="card-producto">
+                    <img src="/images/amigurumi_tigre.jpg" alt="Amigurumi Tigre" class="producto-imagen">
+                    <span class="producto-categoria">Textil</span>
+                    <h3 class="producto-nombre">Amigurumi Tigre</h3>
+                    <p class="producto-precio">$45.00</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+    
+                <div class="card-producto">
+                    <img src="/images/amigurumis_bebes.jpg" alt="Amigurumis bebés" class="producto-imagen">
+                    <span class="producto-categoria">Textil</span>
+                    <h3 class="producto-nombre">Amigurumis bebés</h3>
+                    <p class="producto-precio">$18.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+    
+                <div class="card-producto">
+                    <img src="/images/amigurumis_conejos.jpg" alt="Amigurumis conejos" class="producto-imagen">
+                    <span class="producto-categoria">Textil</span>
+                    <h3 class="producto-nombre">Amigurumis conejos</h3>
+                    <p class="producto-precio">$24.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+                 <div class="card-producto">
+                    <img src="/images/denario.jpg" alt="Denario" class="producto-imagen">
+                    <span class="producto-categoria">Joyería</span>
+                    <h3 class="producto-nombre">Denario</h3>
+                    <p class="producto-precio">$12.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+    
+                <div class="card-producto">
+                    <img src="/images/jabones_artesanales.jpg" alt="Jabones artesanales" class="producto-imagen">
+                    <span class="producto-categoria">Otra</span>
+                    <h3 class="producto-nombre">Jabones artesanales</h3>
+                    <p class="producto-precio">$8.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+    
+                <div class="card-producto">
+                    <img src="/images/platos_ceramica.jpg" alt="Platos de cerámica" class="producto-imagen">
+                    <span class="producto-categoria">Cerámica</span>
+                    <h3 class="producto-nombre">"Platos de cerámica</h3>
+                    <p class="producto-precio">$28.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+                 <div class="card-producto">
+                    <img src="/images/tazas_ceramica.jpg" alt="Taza de cerámica" class="producto-imagen">
+                    <span class="producto-categoria">Cerámica</span>
+                    <h3 class="producto-nombre">Taza de cerámica artesanal</h3>
+                    <p class="producto-precio">$18.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+    
+                <div class="card-producto">
+                    <img src="/images/madera_tabla.jpg" alt="Tabla de asado" class="producto-imagen">
+                    <span class="producto-categoria">Madera</span>
+                    <h3 class="producto-nombre">Tabla de asado</h3>
+                    <p class="producto-precio">$26.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+    
+                <div class="card-producto">
+                    <img src="/images/pulsera_madera.jpg" alt="Pulsera de madera" class="producto-imagen">
+                    <span class="producto-categoria">Joyería</span>
+                    <h3 class="producto-nombre">Pulsera de madera</h3>
+                    <p class="producto-precio">$12.000</p>
+                    <div class="cantidad-control">
+                        <button onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="1" value="1">
+                        <button onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="reviews-section">
+            <div class="section-header">
+                <h2 class="section-title">Opiniones de nuestros clientes</h2>
+                <p class="section-subtitle">Descubrí lo que dicen nuestros compradores sobre nuestros productos artesanales</p>
+            </div>
+    
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="/images/foto_mujer1.jpg" alt="Avatar" class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">María García</div>
+                            <div class="review-date">15 de marzo, 2024</div>
+                        </div>
+                    </div>
+    
+                    <div class="review-rating">
+                        <div class="stars">★★★★★</div>
+                    </div>
+    
+                    <div class="review-body">
+                        <div class="review-product">
+                            <img src="/images/arbolitos.jpg" alt="Arbolitos" class="product-image">
+                            <div class="product-name">Arbolitos artesanales</div>
+                        </div>
+    
+                        <div class="review-content">
+                            Excelente producto artesanal. La calidad es excepcional y los detalles son hermosos. 
+                            Definitivamente volveré a comprar más piezas.
+                        </div>
+    
+                    </div>
+    
+                    <div class="review-footer">
+                        <button class="helpful-btn">
+                            👍 Útil (24)
+                        </button>
+                        <span class="verified-badge">Compra verificada</span>
+                    </div>
+                </div>
+    
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="/images/foto_hombre1.jpg" alt="Avatar" class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Carlos Rodríguez</div>
+                            <div class="review-date">12 de marzo, 2024</div>
+                        </div>
+                    </div>
+    
+                    <div class="review-rating">
+                        <div class="stars">★★★★☆</div>
+                    </div>
+    
+                    <div class="review-body">
+                        <div class="review-product">
+                            <img src="/images/pulsera_madera.jpg" alt="Pulsera" class="product-image">
+                            <div class="product-name">Pulsera de madera</div>
+                        </div>
+    
+                        <div class="review-content">
+                            Muy bonito diseño y buenos materiales. Solo le quito una estrella porque 
+                            el envío tardó un poco más de lo esperado, pero el producto en sí es 
+                            excelente y único.
+                        </div>
+    
+                    </div>
+    
+                    <div class="review-footer">
+                        <button class="helpful-btn">
+                            👍 Útil (15)
+                        </button>
+                        <span class="verified-badge">Compra verificada</span>
+                    </div>
+                </div>
+    
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="/images/foto_mujer2.jpg" alt="Avatar" class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Ana Martínez</div>
+                            <div class="review-date">10 de marzo, 2024</div>
+                        </div>
+                    </div>
+    
+                    <div class="review-rating">
+                        <div class="stars">★★★★★</div>
+                    </div>
+    
+                    <div class="review-body">
+                        <div class="review-product">
+                            <img src="/images/amigurumis_bebes.jpg" alt="Amigurumis bebés" class="product-image">
+                            <div class="product-name">Amigurumis bebés</div>
+                        </div>
+    
+                        <div class="review-content">
+                            ¡Simplemente espectacular! Los colores son vibrantes y la calidad del 
+                            tejido es impresionante. Se nota el trabajo artesanal en cada detalle.
+                        </div>
+    
+                    </div>
+    
+                    <div class="review-footer">
+                        <button class="helpful-btn">
+                            👍 Útil (31)
+                        </button>
+                        <span class="verified-badge">Compra verificada</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section1">
+                <h3>Sobre Nosotros</h3>
+                <p>CasaArtesana. Piezas únicas para hogares únicos. <br>Artesanías que dan vida a tu hogar.</p>
+            </div>
+
+            <div class="footer-section2">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Email: info@casaartesana.com</li>
+                    <li>Teléfono: (123) 456-7890</li>
+                    <li>Dirección: Calle Falsa 123, Springfield, CP 12345</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            
+             <hr>
+             <br>
+            <p>&copy; 2024 CasaArtesana. Todos los derechos reservados.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
