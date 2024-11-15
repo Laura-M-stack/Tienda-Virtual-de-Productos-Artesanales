@@ -5,7 +5,7 @@
     --primario:  #845ec2;
     --primario-oscuro:#4902ac;
     --overlay:  rgba(0, 0, 0, 0.4);
-    --gris: #b0a8b9;
+    --gris: #d8d0e1;
     --gris-oscuro: #7a7a7a;
     --secundario:#f6c8ff;
     --resenias: #ffd700;
@@ -420,17 +420,17 @@ button:hover {
 .section-header {
     text-align: center;
     margin-bottom: 40px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .section-title {
-    font-size: 2em;
+    font-size: 2.3em;
     color: var(--primario);
     margin-bottom: 15px;
 }
 
 .section-subtitle {
-    color:var(--blanco-fondo);
+    color:var(--negro);
     font-size: 1.3em;
 }
 
