@@ -325,7 +325,7 @@ button:hover {
 
 /* Estilos base del formulario */
 .main-header-form {
-    margin-top: 90px;
+    padding-top: 140px;
     color: var(--white);
 }
 .frm-back {
@@ -335,7 +335,7 @@ button:hover {
         background-attachment: fixed;
         position: relative;
         z-index: 1;
-        margin-bottom: 80px;
+        height: 900px;
     }
     
     .frm-back::before {
@@ -437,7 +437,7 @@ button:hover {
 
   @media (max-width:760px){
     .main-header-form {padding-top: 80px;
-        
+       
   }
 
   .reviews-section {
@@ -720,4 +720,5 @@ hr {
     .footer-bottom p {
         font-size: 0.8rem;
     }
+}
 }
