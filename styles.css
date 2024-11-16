@@ -329,7 +329,6 @@ button:hover {
     color: var(--white);
 }
 .frm-back {
-    
         background-image: url('images/fondo_home.jpg');
         background-size: cover;
         background-attachment: fixed;
@@ -438,7 +437,7 @@ button:hover {
   @media (max-width:760px){
     .main-header-form {padding-top: 80px;
        
-  }
+  }}
 
   .reviews-section {
     max-width: 1200px;
