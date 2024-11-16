@@ -435,6 +435,9 @@ button:hover {
     border-color: #fc8181;
   }
 
+  @media (max-width:760px){
+    .main-header-form {padding-top: 80px;
+  }
 
   .reviews-section {
     max-width: 1200px;
